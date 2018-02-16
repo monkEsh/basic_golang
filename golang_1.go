@@ -20,6 +20,18 @@ func add(x, y float64) float64 {
 }
 
 func main() {
+	/*
+		we can initialize variables by following methods
+		1. Declare variables with datatype
+			var <variable name> <datatype> = <value>
+			var <variable name> <datatype> = <value>
+			var <variable name> <datatype> = <value>
+		2. Declare multiple variables of same type in line
+			var <var name1>, <var num2> <datatype> = <var1 value>, <var2 value>
+		3. Declare variables inside function without datatype, Go dev use this method to define variable inside function.
+			<var name1>, <var num2> := <var1 value>, <var2 value>
+		NOTE: Whenever we define variable outside function we cannot use 3rd method
+	*/
 	w1, w2 := "hello", "World"
 	num1, num2 := 5.6, 9.5
 	fmt.Println(multiple(w1, w2))
