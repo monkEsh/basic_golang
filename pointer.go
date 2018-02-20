@@ -1,5 +1,10 @@
+// Every Go program is made up of packages.
+
+// Programs start running in package main.
+
 package main
 
+// Package fmt implements formatted I/O with functions analogous to C's printf and scanf.
 import (
 	"fmt"
 )
