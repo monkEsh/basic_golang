@@ -34,6 +34,12 @@ func main() {
 	*/
 	w1, w2 := "hello", "World"
 	num1, num2 := 5.6, 9.5
+	var num3 int = 62
+
 	fmt.Println(multiple(w1, w2))
 	fmt.Println(add(num1, num2))
+
+	// Changing datatype of variable
+	var num4 float64 = float64(num3)
+	fmt.Println(num4)
 }
