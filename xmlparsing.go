@@ -29,7 +29,7 @@ func (l CdInfo) String() string {
 	return fmt.Sprintln(l.Title, l.Price, l.Artist)
 }
 
-func main() {
+func xml_parse() {
 	resp, _ := http.Get("https://www.w3schools.com/xml/cd_catalog.xml")
 	bytes, _ := ioutil.ReadAll(resp.Body)
 	resp.Body.Close()
@@ -39,6 +39,9 @@ func main() {
 	for _, CdInfo := range s.CdInfos {
 		fmt.Println("Prince of :", CdInfo.Title, ", written by :", CdInfo.Artist, ", is: ", CdInfo.Price)
 	}
+}
+func main() {
+	xml_parse()
 }
 
 /*
