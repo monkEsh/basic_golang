@@ -35,7 +35,10 @@ func main() {
 	resp.Body.Close()
 	var s cdIndex
 	xml.Unmarshal(bytes, &s)
-	fmt.Println(s.CdInfos)
+	// fmt.Println(s.CdInfos)
+	for _, CdInfo := range s.CdInfos {
+		fmt.Println("Prince of :", CdInfo.Title, ", written by :", CdInfo.Artist, ", is: ", CdInfo.Price)
+	}
 }
 
 /*
